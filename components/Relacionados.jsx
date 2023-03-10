@@ -29,7 +29,7 @@ export default function Relacionados({ datoRelacionados }) {
                     alt={e.postsRelacionados.ppa}
                     title={e.postsRelacionados.titulo}
                   >
-                    {e.postsRelacionados.titulo}
+                    {e.postsRelacionados.titulo.replaceAll('"', "")}
                   </Link>
                 </p>
                 {/*  <p className="text-gray-600">
